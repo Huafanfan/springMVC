@@ -1,0 +1,24 @@
+==>  Preparing: select *,0 pid from users where username=? and password=?  
+==> Parameters: 张三(String), 123456(String) 
+====>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+====> Parameters: 1(Integer), 1(Integer), 0(Long) 
+======>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+======> Parameters: 1(Long), 1(Long), 1(Integer) 
+========>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+========> Parameters: 1(Long), 1(Long), 3(Integer) 
+<========      Total: 0 
+========>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+========> Parameters: 1(Long), 1(Long), 4(Integer) 
+<========      Total: 0 
+<======      Total: 2 
+======>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+======> Parameters: 1(Long), 1(Long), 2(Integer) 
+========>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+========> Parameters: 1(Long), 1(Long), 5(Integer) 
+<========      Total: 0 
+========>  Preparing: select *,? uid from menu where id in (select mid from users_menu where uid=?) and pid=?  
+========> Parameters: 1(Long), 1(Long), 6(Integer) 
+<========      Total: 0 
+<======      Total: 2 
+<====      Total: 2 
+<==      Total: 1 
